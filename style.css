@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    user-select: none;
 }
 
 body {
     height: 100vh;
-    background: #965196;
+    background: #6c8d5e;
     font-size: 16px;
 }
 
@@ -18,7 +19,7 @@ nav {
     padding: 10px;
     height: 50px;
     width: 100%;
-    background-color: #868597;
+    background-color: #c17f41;
 }
 
 h1 {
@@ -41,12 +42,18 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    border: 1px solid green;
+    color: green;
+    padding: 4px 10px;
+}
+
+a:hover {
+    border-color: blue;
+    color: blue;
 }
 
 .hamburger {
     cursor: pointer;
-    user-select: none;
     display: none;
 }
 
@@ -73,10 +80,6 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        background: #ac8585;
-    }
-
     ul {
         flex-direction: column;
         position: absolute;
@@ -84,7 +87,7 @@ a {
         left: -100%;
         height: calc(100vh - 50px);
         width: 100%;
-        background: #000;
+        background: #6899b2;
     }
 
     ul.open {
